@@ -11,6 +11,7 @@ background-color: rgba(4, 4, 59, 0.907);
 section {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 header {
@@ -54,6 +55,51 @@ header a {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 64px;
+}
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+main {
+    background-color: white;
+}
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #272044;
+    text-transform: uppercase;
+    opacity: 0.3;
+    margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
+main .img {
+   max-width: 90%;
+   padding: 30px 0;
+}
+main .abt {
+     padding: 80px 0;
 }
 
 footer{
@@ -103,5 +149,19 @@ footer a {
      }
           header h3{
         font-size: 12px;
+     }
+     .grid-2-columns {
+        grid-template-columns: 1fr;
+     }
+     main .img {
+        padding: 30px 20px 0 20px;
+     }
+     main .abt {
+       text-align: center;
+       padding: 0 25px 0 25px;
+     }
+     
+     .grid-3-columns {
+        grid-template-columns: 1fr;
      }
 }
