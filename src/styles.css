@@ -80,6 +80,11 @@ header a {
 .card-header {
     border: none!important;
 }
+
+.card-header.grid {
+    grid-gap: 0;
+}
+
 .card-footer {
     padding: 20px;
     border: none!important;
@@ -87,8 +92,12 @@ header a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
+}
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 main .btn {
@@ -219,4 +228,11 @@ footer a {
      .grid-3-columns {
         grid-template-columns: 1fr;
      }
+
+     .card-header img{
+   display: none;
+     }
+.embed {
+    aspect-ratio: 16/9;
+}
 }
