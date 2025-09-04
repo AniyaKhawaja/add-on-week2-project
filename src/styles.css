@@ -1,6 +1,6 @@
 body {
 font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: rgba(4, 4, 59, 0.907);
+background-color: #272044!important;
 }
 
 .container {
@@ -9,11 +9,15 @@ background-color: rgba(4, 4, 59, 0.907);
 }
 
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 100px;
 
 }
 
+section.secondary {
+    background: #F8F8F8;
+}
 header {
 text-align: center;
 color: white;
@@ -53,7 +57,7 @@ header a {
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    
     grid-gap: 64px;
 }
 .grid-2-columns {
@@ -61,7 +65,44 @@ header a {
 }
 
 .grid-3-columns {
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: black;
+    margin: 30px 0;
+    border: none!important;
+}
+.card-body {
+    padding: 30px 0;
+}
+
+.card-header {
+    border: none!important;
+}
+.card-footer {
+    padding: 20px;
+    border: none!important;
+    background-color: white!important;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+main .btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 
 main {
@@ -84,6 +125,20 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+
+main h4 {
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #272044;
+}
+
+main h5 {
+font-weight: 700;
+font-size: 13px;
+line-height: 1.5;
+color: #272044;
 }
 main p {
   font-style: normal;
